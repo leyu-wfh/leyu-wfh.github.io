@@ -1,28 +1,34 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <Scatter />
+    <br />
+    <FxFake />
+    <FxApi />
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import Scatter from "./components/Scatter";
+import FxFake from "./components/FxFake";
+import FxApi from "./components/FxAPI";
 
 export default {
-  name: 'App',
+  name: "App",
   components: {
-    HelloWorld
+    Scatter,
+    FxFake,
+    FxApi
   }
-}
+};
 </script>
 
 <style>
-#app {
+/* #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
-}
+} */
 </style>
